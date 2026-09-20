@@ -164,9 +164,10 @@ input[type='number']:focus, textarea:focus { border-color: #80aa98; box-shadow: 
 .site-footer { max-width: 1050px; display: flex; align-items: center; gap: 18px; color: #9da39d; font-size: 9px; padding: 28px 2px 0; }
 .site-footer > span:nth-child(2) { margin-left: auto; }
 .github-cta { display: flex; align-items: center; gap: 10px; }
-.github-cta small { max-width: 190px; color: #7e8982; line-height: 1.45; text-align: right; }
-.github-cta a { flex: 0 0 auto; color: white; background: var(--green); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; min-height: 34px; padding: 0 11px; border: 1px solid var(--green); border-radius: 9px; font-size: 10px; font-weight: 700; box-shadow: 0 5px 14px rgba(31,107,79,.16); transition: background .2s, transform .2s, box-shadow .2s; }
-.github-cta a:hover { color: white; background: var(--green-dark); transform: translateY(-1px); box-shadow: 0 7px 18px rgba(31,107,79,.22); }
+.github-cta small { color: #6f7a73; line-height: 1.55; text-align: right; font-size: 10px; }
+.github-cta small span { display: block; white-space: nowrap; }
+.github-cta a { flex: 0 0 auto; color: var(--green); background: transparent; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; min-height: 34px; padding: 0 12px; border: 1px solid var(--green); border-radius: 9px; font-size: 10px; font-weight: 700; transition: color .2s, background .2s, transform .2s, box-shadow .2s; }
+.github-cta a:hover { color: var(--green-dark); background: var(--green-soft); transform: translateY(-1px); box-shadow: 0 5px 14px rgba(31,107,79,.12); }
 
 @media (max-width: 900px) {
   .sidebar { position: relative; width: 100%; height: auto; padding: 15px; }.brand { padding: 0 3px 13px; width: fit-content; }.mobile-history-button { display: flex; position: absolute; top: 18px; right: 15px; height: 35px; align-items: center; gap: 6px; color: #cad7d2; background: #20332d; border: 1px solid #30473f; border-radius: 9px; padding: 0 9px; cursor: pointer; font-size: 10px; }.mobile-history-button b { min-width: 19px; padding: 1px 5px; color: white; background: var(--orange); border-radius: 20px; font-size: 9px; }.sidebar nav { overflow-x: auto; }.nav-kicker, .sidebar-bottom { display: none; }.mode-list { display: flex; min-width: 650px; }.mode-item { min-width: 150px; padding: 9px; }.mode-item small { display: none; }.main-content { margin-left: 0; padding: 37px 24px 20px; }.workspace { grid-template-columns: 1fr 1fr; }

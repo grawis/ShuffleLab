@@ -133,8 +133,8 @@ export default function App() {
           <span>ShuffleLab · 所有資料僅在本機處理</span>
           <span>不宣稱具公證或法律層級之公平性認證</span>
           <div className="github-cta">
-            <small>有 Bug 或建議歡迎告訴我，覺得好用也請點進來按個星星哦～</small>
-            <a href="https://github.com/grawis/ShuffleLab" target="_blank" rel="noreferrer" aria-label="前往 ShuffleLab GitHub repository 回報問題或按 Star（另開新視窗）"><Icon name="github" size={16} /><span>GitHub · Star</span></a>
+            <small><span>有 Bug 或建議歡迎告訴我</span><span>覺得好用也請點進來按個星星哦～</span></small>
+            <a href="https://github.com/grawis/ShuffleLab" target="_blank" rel="noreferrer" aria-label="前往 ShuffleLab GitHub repository 回報問題或按 Star（另開新視窗）"><Icon name="github" size={16} /><span>GitHub</span></a>
           </div>
         </footer>
       </main>
