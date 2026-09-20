@@ -129,7 +129,7 @@ export default function App() {
         {animating && <section className="shuffle-stage" aria-live="polite"><div className="shuffle-orb"><span>✦</span><span>✦</span><span>✦</span></div><strong>{mode === 'group' ? '正在公平分組…' : '好運正在洗牌…'}</strong><p>正式結果已由安全亂數決定</p></section>}
         {result && !animating && <ResultPanel ref={resultRef} snapshot={result} />}
 
-        <footer className="site-footer"><span>ShuffleLab · 所有資料僅在本機處理</span><span>不宣稱具公證或法律層級之公平性認證</span></footer>
+        <footer className="site-footer"><span>ShuffleLab · 所有資料僅在本機處理</span><span>不宣稱具公證或法律層級之公平性認證</span><a href="https://github.com/grawis/ShuffleLab" target="_blank" rel="noreferrer" aria-label="前往 ShuffleLab GitHub repository（另開新視窗）"><Icon name="github" size={15} />GitHub</a></footer>
       </main>
 
       {historyOpen && <HistoryPanel records={history} onClose={() => setHistoryOpen(false)} onClear={clearHistory} onSelect={(record) => { setMode(record.mode); setResult(record); setHistoryOpen(false) }} />}

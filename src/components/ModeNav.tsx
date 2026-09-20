@@ -22,6 +22,9 @@ export function ModeNav({ value, onChange, historyCount, onHistory }: ModeNavPro
         <span className="brand-mark"><Icon name="sparkles" size={22} /></span>
         <span><strong>ShuffleLab</strong><small>FAIR · SIMPLE · RANDOM</small></span>
       </a>
+      <button type="button" className="mobile-history-button" onClick={onHistory} aria-label={`開啟歷史紀錄，共 ${historyCount} 筆`}>
+        <Icon name="history" size={18} /><span>歷史</span><b>{historyCount}</b>
+      </button>
       <nav aria-label="抽籤模式">
         <p className="nav-kicker">抽籤模式</p>
         <div className="mode-list">

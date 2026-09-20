@@ -1,5 +1,5 @@
 interface IconProps {
-  name: 'number' | 'people' | 'groups' | 'order' | 'history' | 'shield' | 'upload' | 'sparkles' | 'copy' | 'expand' | 'download' | 'close'
+  name: 'number' | 'people' | 'groups' | 'order' | 'history' | 'shield' | 'upload' | 'sparkles' | 'copy' | 'expand' | 'download' | 'close' | 'github'
   size?: number
 }
 
@@ -16,6 +16,7 @@ const paths: Record<IconProps['name'], React.ReactNode> = {
   expand: <><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5" /></>,
   download: <><path d="M12 3v13M7 11l5 5 5-5M4 21h16" /></>,
   close: <><path d="m6 6 12 12M18 6 6 18" /></>,
+  github: <><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4M8 19c-3 .9-3-1.5-4-2" /></>,
 }
 
 export function Icon({ name, size = 20 }: IconProps) {

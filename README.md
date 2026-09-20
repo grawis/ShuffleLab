@@ -2,6 +2,8 @@
 
 ShuffleLab 是一個純前端、免登入的繁體中文隨機工具網站。提供數字抽籤、名單抽籤、團體分組與順序抽籤，適合課堂、活動、報告順序及聚會使用。
 
+**線上使用：** [https://grawis.github.io/ShuffleLab/](https://grawis.github.io/ShuffleLab/)
+
 ## 功能
 
 - 數字抽籤：自訂安全整數範圍、抽取數量及是否允許重複。
