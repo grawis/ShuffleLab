@@ -129,6 +129,11 @@ export default function App() {
         {animating && <section className="shuffle-stage" aria-live="polite"><div className="shuffle-orb"><span>✦</span><span>✦</span><span>✦</span></div><strong>{mode === 'group' ? '正在公平分組…' : '好運正在洗牌…'}</strong><p>正式結果已由安全亂數決定</p></section>}
         {result && !animating && <ResultPanel ref={resultRef} snapshot={result} />}
 
+        <section className="about-shufflelab" aria-labelledby="about-shufflelab-title">
+          <div><span className="eyebrow">ABOUT SHUFFLELAB</span><h2 id="about-shufflelab-title">免費線上隨機抽籤與亂數產生工具</h2></div>
+          <p>ShuffleLab 提供數字抽籤、名單抽籤、隨機分組及順序抽籤。免登入，名單與結果只在你的瀏覽器內處理，適合課堂、活動、報告、聚會與日常決策。</p>
+        </section>
+
         <footer className="site-footer">
           <span>ShuffleLab · 所有資料僅在本機處理</span>
           <span>不宣稱具公證或法律層級之公平性認證</span>
