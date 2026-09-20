@@ -27,6 +27,7 @@ export function NameDrawSettings(props: Props) {
           <button type="button" className={props.allowDuplicates ? 'selected' : ''} onClick={() => props.onDuplicateChange(true)}>允許重複</button>
         </div></fieldset>
       </div>
+      <p className="setting-help" aria-live="polite"><strong>{props.allowDuplicates ? '允許重複：' : '禁止重複：'}</strong>{props.allowDuplicates ? '同一次抽籤可能多次抽到相同項目。' : '同一次結果不會有相同項目；重新抽籤時仍會使用完整名單。'}</p>
       {error && <p className="form-error" role="alert">{error}</p>}
       <button className="draw-button" type="button" disabled={props.disabled || Boolean(error)} onClick={props.onDraw}><span>開始抽籤</span><span aria-hidden="true">✦</span></button>
     </section>

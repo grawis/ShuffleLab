@@ -27,8 +27,9 @@ ShuffleLab 是一個純前端、免登入的繁體中文隨機工具網站。提
 - ESLint
 - 原生 CSS
 - Web Crypto API、Fullscreen API、Canvas API、localStorage
+- html2canvas：將結果區域可靠地轉為 PNG
 
-專案沒有加入 UI、CSV 或圖片匯出第三方套件。CSV 使用專案內的 RFC 4180 相容解析器；PNG 由 SVG `foreignObject` 與 Canvas 在瀏覽器內產生。
+專案沒有加入 UI 或 CSV 第三方套件。CSV 使用專案內的 RFC 4180 相容解析器；PNG 使用 html2canvas 在瀏覽器內產生。
 
 ## 本機執行
 
@@ -72,7 +73,7 @@ npm run preview    # 預覽 production build
 - 單一 TXT／CSV 檔案上限：2 MB。
 - CSV 有效資料上限：5,000 列。
 - 主要支援現代瀏覽器；Web Crypto API 為必要條件。
-- PNG 匯出依賴瀏覽器對 SVG `foreignObject` 與 Canvas 的支援。若瀏覽器限制此功能，介面會顯示錯誤，可改用複製結果或系統截圖。
+- PNG 匯出依賴瀏覽器的 Canvas 支援。若瀏覽器限制下載功能，介面會顯示錯誤，可改用複製結果或系統截圖。
 - TXT 以 UTF-8 解碼；第一版不自動偵測 Big5 等其他編碼。
 - 重新整理不保留尚未抽籤的名單草稿或模式設定。
 

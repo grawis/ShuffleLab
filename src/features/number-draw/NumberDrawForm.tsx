@@ -30,6 +30,7 @@ export function NumberDrawForm({ settings, disabled, onChange, onDraw }: Props) 
           <button type="button" className={settings.allowDuplicates ? 'selected' : ''} onClick={() => update('allowDuplicates', true)}>允許重複</button>
         </div></fieldset>
       </div>
+      <p className="setting-help" aria-live="polite"><strong>{settings.allowDuplicates ? '允許重複：' : '禁止重複：'}</strong>{settings.allowDuplicates ? '同一次抽籤可能多次抽到相同數字。' : '同一次結果不會有相同數字；重新抽籤時仍會使用完整範圍。'}</p>
       {error && <p className="form-error" role="alert">{error}</p>}
       <button className="draw-button" type="button" disabled={disabled || Boolean(error)} onClick={onDraw}><span>開始抽籤</span><span aria-hidden="true">✦</span></button>
     </section>
